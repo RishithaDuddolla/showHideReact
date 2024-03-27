@@ -1,12 +1,17 @@
-import {Comopnent} from 'react'
+import {Component} from 'react'
 import './index.css'
 
-class ShowHide extends Comopnent {
+class ShowHide extends Component {
   state = {firstnamebutton: false, secondnamebutton: false}
 
-  onClicked = () => {
-    this.setSate(prevstate => ({
+  onClickedfn = () => {
+    this.setState(prevstate => ({
       firstnamebutton: !prevstate.firstnamebutton,
+    }))
+  }
+
+  onClickedsn = () => {
+    this.setState(prevstate => ({
       secondnamebutton: !prevstate.secondnamebutton,
     }))
   }
@@ -18,8 +23,8 @@ class ShowHide extends Comopnent {
         <div className="card">
           <h1 className="h1">Show/Hide</h1>
           <div className="wrap">
-            <div>
-              <button type="button" className="btn" onClick={this.onClicked}>
+            <div className="margin">
+              <button type="button" className="btn" onClick={this.onClickedfn}>
                 Show/Hide Firstname
               </button>
               {firstnamebutton ? (
@@ -28,8 +33,8 @@ class ShowHide extends Comopnent {
                 </div>
               ) : null}
             </div>
-            <div>
-              <button type="button" className="btn" onClick={this.onClicked}>
+            <div className="margin">
+              <button type="button" className="btn" onClick={this.onClickedsn}>
                 Show/Hide Lastname
               </button>
               {secondnamebutton ? (
