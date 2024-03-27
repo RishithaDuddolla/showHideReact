@@ -1,6 +1,6 @@
 /* Write your CSS here */
 .bg {
-  background-image: radial-gradient(toright, #fa7257, #fc63a7);
+  background-image: linear-gradient(toright, #fa7257, #fc63a7);
   display: flex;
   flex-direction: column;
   justify-content: center;
