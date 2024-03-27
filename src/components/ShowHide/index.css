@@ -1,6 +1,6 @@
 /* Write your CSS here */
 .bg {
-  background-image: linear-gradient(toright, #fa7257, #fc63a7);
+  background-image: linear-gradient(to right, #fa7257, #fc63a7);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,6 +18,9 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+.margin {
+  margin: 30px;
+}
 .h1 {
   color: white;
   font-family: 'Roboto';
@@ -28,6 +31,11 @@
   background-color: white;
   color: #dd1264;
   padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+  border: 0px;
+  margin-bottom: 10px;
 }
 .fn {
   display: flex;
@@ -36,6 +44,7 @@
   align-items: center;
   background-color: #fddddb;
   padding: 5px;
+  border-radius: 8px;
 }
 .name {
   color: black;
